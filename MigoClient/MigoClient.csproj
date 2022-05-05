@@ -5,6 +5,16 @@
 	</PropertyGroup>
 
 	<ItemGroup>
+	  <None Include="wwwroot\assets\Bell.svg" />
+	  <None Include="wwwroot\assets\calendar.svg" />
+	  <None Include="wwwroot\assets\carousel-photos.png" />
+	  <None Include="wwwroot\assets\cloudy.svg" />
+	  <None Include="wwwroot\assets\user.png" />
+	  <None Include="wwwroot\assets\Logo.svg" />
+	  <None Include="wwwroot\assets\sun.svg" />
+	</ItemGroup>
+
+	<ItemGroup>
 		<PackageReference Include="Google.Protobuf" Version="3.20.1" />
 		<PackageReference Include="Grpc.Net.Client" Version="2.45.0" />
 		<PackageReference Include="Grpc.Tools" Version="2.45.0">

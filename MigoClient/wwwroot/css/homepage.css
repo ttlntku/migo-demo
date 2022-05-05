@@ -1,0 +1,61 @@
+﻿.navbar{
+    height: 64px;
+}
+
+.navbar-search-container {
+    display: flex;
+    align-items: center;
+    height: 64px;
+    margin-top: -0.5rem;
+}
+
+.navbar-search {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.16);
+}
+
+.navbar-search-input {
+    font-family: 'Mulish';
+    font-size: 16px;
+    height: 32px;
+    border: none;
+    width: 100%;
+}
+
+.navbar-right-container {
+    margin-top: -0.5rem;
+    display: flex;
+    justify-content: end;
+    right: 0%;
+    align-items: center;
+    height: 64px;
+}
+.user-icon {
+    height: 32px;
+    width: 32px;
+}
+
+.navbar-notification, .navbar-user {
+    padding-right: 20px;
+}
+
+.navbar-user {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-family: 'Mulish';
+    background-color: aquamarine;
+    text-align: center;
+    height: 24px;
+}
+
+.navbar-user p{
+    padding-left: 10px;
+    margin: auto;
+}
+
+.container {
+    background-color: chocolate;
+}
