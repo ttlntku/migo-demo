@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32421.90
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MigoService", "MigoService\MigoService.csproj", "{EC03481A-F735-4EE0-86DD-E59493592796}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MigoClient", "MigoClient\MigoClient.csproj", "{E1725BB7-B167-400A-8C52-79CB7730EB55}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EC03481A-F735-4EE0-86DD-E59493592796}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC03481A-F735-4EE0-86DD-E59493592796}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC03481A-F735-4EE0-86DD-E59493592796}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC03481A-F735-4EE0-86DD-E59493592796}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1725BB7-B167-400A-8C52-79CB7730EB55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1725BB7-B167-400A-8C52-79CB7730EB55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1725BB7-B167-400A-8C52-79CB7730EB55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1725BB7-B167-400A-8C52-79CB7730EB55}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A6BDF6AE-5BC0-4730-A954-AE4023A774F7}
+	EndGlobalSection
+EndGlobal
