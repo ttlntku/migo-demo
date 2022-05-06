@@ -1,0 +1,45 @@
+﻿.story-container {
+    background-color: blueviolet;
+    margin: 120px 160px 0px 160px;
+}
+
+.story-header p {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 56px;
+    color: #080D34;
+}
+
+.story-calendar-group {
+    position: relative;
+    margin: auto;
+    background-color: aquamarine;
+}
+
+    .story-calendar-group p {
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 14px !important;
+        line-height: 18px;
+        text-transform: uppercase;
+        color: #000000;
+        padding: 2px 7px 4px 8px !important;
+    }
+
+.story-calendar-container p {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    color: #191A2B;
+    margin: auto;
+    padding-left: 12px;
+}
+
+.story-header svg {
+    margin: auto;
+}
