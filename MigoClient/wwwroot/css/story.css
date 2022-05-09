@@ -1,6 +1,10 @@
 ﻿/*header section start*/
+.story-screen {
+    background-color: #F9F8F2;
+}
+
 .story-container {
-    margin: 120px 160px 0px 160px;
+    padding: 120px 160px 120px 160px;
 }
 
 p.title {
@@ -43,7 +47,7 @@ p.calendar-month {
 /*responsive section*/
 @media screen and (max-width: 700px) {
     .story-container {
-        margin: 80px 24px 0px 24px;
+        padding: 80px 24px 88px 24px;
     }
 
     p.title {
@@ -67,7 +71,8 @@ p.calendar-month {
 }
 
     .story-photo-group::-webkit-scrollbar-track {
-        background-color: white;
+        margin: 0 25vh 0 25vh;
+        border: none;
         border-bottom: 1px solid rgba(0, 0, 0, 0.12);
     }
 
@@ -166,6 +171,14 @@ p.story-content-address {
         font-weight: 700 !important;
         font-size: 18px !important;
         line-height: 26px !important;
+    }
+
+    .story-photo-group{
+        margin-top: 24px !important;
+    }
+
+    .story-photo-group::-webkit-scrollbar-track {
+        margin: 0 10vh 0 10vh !important;
     }
 }
 /*main section end*/
