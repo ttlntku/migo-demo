@@ -14,6 +14,7 @@
     height: 12px;
     border: none !important;
     border-radius: 30px;
+    background-color: #F2F2F2;
 }
 
     .about-carousel li.active {
