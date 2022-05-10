@@ -1,0 +1,127 @@
+﻿.about-screen {
+    height: 618px;
+    padding: 140px 160px;
+}
+
+.about-carousel-item img {
+    height: 338px;
+    width: 217px;
+    object-fit: cover;
+}
+
+.about-carousel li {
+    width: 12px;
+    height: 12px;
+    border: none !important;
+    border-radius: 30px;
+    background-color: #F2F2F2;
+}
+
+    .about-carousel li.active {
+        background: #F2C94C;
+        opacity: 0.5;
+    }
+
+.about-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-header {
+}
+
+    .about-header p {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 56px;
+        color: #080D34;
+    }
+
+.about-main {
+    display: flex;
+    justify-content: center;
+}
+
+.about-bracket-container {
+    display: flex;
+}
+
+    .about-bracket-container img {
+        width: 23.65px;
+        height: 43.36px;
+        margin-left: 5px;
+        filter: invert(12%) sepia(0%) saturate(3125%) hue-rotate(280deg) brightness(100%) contrast(79%);
+    }
+
+p.about-content {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 34px;
+    color: #000000;
+    width: 298px;
+    margin-right: 31px;
+}
+
+p.about-author {
+    margin: unset;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 32px;
+    color: #000000;
+}
+
+.m-about-image-container img {
+    height: 32px;
+    width: 32px;
+    border-radius: 30px;
+}
+/*responsive section*/
+@media screen and (max-width: 700px) {
+    .about-screen {
+        height: 520px;
+        padding: 80px 24px;
+    }
+
+    .about-container {
+        flex-wrap: wrap;
+    }
+
+    .about-header {
+        text-align: center !important;
+    }
+
+        .about-header p {
+            font-size: 28px;
+            line-height: 44px;
+            color: #323234;
+            word-wrap: break-word;
+            padding: 0px 100px 0px 100px;
+        }
+
+    .about-bracket-container img {
+        width: 15.52px;
+        height: 28.46px;
+        margin-left: 3px;
+    }
+
+
+    p.about-content {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    p.about-author {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        padding: 4px 0 0 8px;
+    }
+
+    .about-carousel-indicators {
+        bottom: 45%;
+    }
+}
