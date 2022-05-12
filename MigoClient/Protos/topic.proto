@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+option csharp_namespace = "MigoClient";
+
+package topic;
+
+// The greeting service definition.
+service TopicFunc {
+  // Sends a greeting
+  rpc GetAllTopic (EmptyTopic) returns (Topics);
+}
+
+message EmptyTopic {}
+
+message Topic {
+    int32 Id = 1;
+    string TopicName = 2;
+    string TopicIcon = 3;
+}
+
+message Topics {
+    repeated Topic Items = 1;
+}
