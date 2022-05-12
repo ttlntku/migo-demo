@@ -57,7 +57,7 @@ a.topic-link {
     color: #191A2B;
 }
 
-.topic-card{
+.topic-card {
     width: 300px;
 }
 
@@ -211,5 +211,9 @@ p.topic-relate-title {
     .topic-link p {
         font-size: 15px !important;
         line-height: 23px !important;
+    }
+
+    img.topic-card-img-top {
+        height: 220px;
     }
 }

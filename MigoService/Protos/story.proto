@@ -1,0 +1,28 @@
+syntax = "proto3";
+
+option csharp_namespace = "MigoService";
+
+package story;
+
+// The greeting service definition.
+service StoryFunc {
+  // Sends a greeting
+  rpc GetAllStory (EmptyStory) returns (Stories);
+}
+
+message EmptyStory {}
+
+message Story {
+    int32 Id = 1;
+    int32 TopicId = 2;
+    string Title = 3;
+    string PhotoUrl = 4;
+    string Address = 5;
+    string Description = 6;
+    string AwardName = 7;
+    string AwardIconUrl = 8;
+}
+
+message Stories {
+    repeated Story Items = 1;
+}

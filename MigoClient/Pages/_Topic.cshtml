@@ -1,39 +1,32 @@
-﻿<div class="topic-screen">
+﻿@model IndexModel
+
+<div class="topic-screen">
     <div class="topic-container">
         <div class="topic-header">
             <p class="topic-header-title">Stories by topics</p>
             <div class="topic-category">
-                <a class="topic-link">
-                    <img src="~/assets/food-drink.svg" alt="logo" class=" d-none d-md-block d-md-none d-lg-block" />
-                    <p>Food & Drinks</p>
-                </a>
-                <a class="topic-link">
-                    <img src="~/assets/city-cultures.svg" alt="logo" class=" d-none d-md-block d-md-none d-lg-block" />
-                    <p>City & Culture</p>
-                </a>
-                <a class="topic-link">
-                    <img src="~/assets/gateway-resort.svg" alt="logo" class=" d-none d-md-block d-md-none d-lg-block" />
-                    <p>Getaway & Resorts</p>
-                </a>
-                <a class="topic-link">
-                    <img src="~/assets/nature-adventure.svg" alt="logo" class=" d-none d-md-block d-md-none d-lg-block" />
-                    <p>Nature & Adventure</p>
-                </a>
+                @foreach (var item in Model.topics.Items)
+                {
+                    <a class="topic-link">
+                        <img src="@item.TopicIcon" alt="@item.TopicName" class=" d-none d-md-block d-md-none d-lg-block" />
+                        <p>@item.TopicName</p>
+                    </a>
+                }
             </div>
         </div>
         <div class="topic-main d-none d-md-block d-md-none d-lg-block">
             <div class="topic-main-container d-flex">
-                <img src="~/assets/topic.png" alt="beach" />
+                <img src="@Model.stories.Items[0].PhotoUrl" alt="beach" />
                 <div class="topic-description-section">
                     <div class="topic-address-section d-flex">
                         <img src="~/assets/position-logo.svg" alt="logo" />
-                        <p class="topic-address">Phú Quốc, Việt Nam</p>
+                        <p class="topic-address">@Model.stories.Items[0].Address</p>
                     </div>
                     <p class="topic-title">
-                        Beautiful beach at Sunrise Resort, in Hoi An, Quang Nam
+                        @Model.stories.Items[0].Title
                     </p>
                     <p class="topic-description">
-                        Located in an open space with clouds, sky, and sea, the special highlight of the resort is the architectural style combining the three countries of Japan, France and Vietnam.
+                        @Model.stories.Items[0].Description
                     </p>
                 </div>
             </div>
@@ -42,68 +35,45 @@
             <div class="topic-category-list">
                 <div class="card topic-card border-0 d-block d-sm-none d-none d-sm-block d-md-none">
                     <div class="card-img-wrapper">
-                        <img class="card-img-top" src="~/assets/card-first.png" alt="Card image cap">
+                        <img class="card-img-top topic-card-img-top" src="@Model.stories.Items[0].PhotoUrl" alt="Card image cap">
                         <div class="topic-card-svg-wrapper">
-                            <img src="~/assets/city-cultures.svg" alt="logo" />
+                            <img src="@Model.stories.Items[0].AwardIconUrl" alt="logo" />
                         </div>
                     </div>
                     <div class="topic-relate-address-section d-flex">
                         <img src="~/assets/position-logo.svg" alt="logo" />
-                        <p class="topic-relate-address">Phú Quốc, Việt Nam</p>
+                        <p class="topic-relate-address">@Model.stories.Items[0].Address</p>
                     </div>
                     <div class="card-body">
-                        <p class="topic-relate-title">Topas Ecolodge - Service and comfort in the clouds</p>
+                        <p class="topic-relate-title">@Model.stories.Items[0].Title</p>
                     </div>
                 </div>
 
-                <div class="card topic-card border-0">
-                    <div class="card-img-wrapper">
-                        <img class="card-img-top" src="~/assets/card-first.png" alt="Card image cap">
-                        <div class="topic-card-svg-wrapper">
-                            <img src="~/assets/city-cultures.svg" alt="logo" />
-                        </div>
-                    </div>
-                    <div class="topic-relate-address-section d-flex">
-                        <img src="~/assets/position-logo.svg" alt="logo" />
-                        <p class="topic-relate-address">Phú Quốc, Việt Nam</p>
-                    </div>
-                    <div class="card-body">
-                        <p class="topic-relate-title">Topas Ecolodge - Service and comfort in the clouds</p>
-                    </div>
-                </div>
+                @foreach (var item in Model.stories.Items)
+                {
+                    var styleIcon = !string.IsNullOrEmpty(item.AwardName) ? "filter:invert(56%) sepia(88%) saturate(353%) hue-rotate(3deg) brightness(91%) contrast(84%) opacity(96%);" : "";
+                    var styleText = !string.IsNullOrEmpty(item.AwardName) ? "color:#C09436" : "";
+                    if (item.Id > 1)
+                    {
+                        <div class="card topic-card border-0">
+                            <div class="card-img-wrapper">
+                                <img class="card-img-top" src="@item.PhotoUrl" alt="Card image cap">
+                                <div class="topic-card-svg-wrapper">
+                                    <img src="@item.AwardIconUrl" alt="logo" />
+                                    <p>@item.AwardName</p>
+                                </div>
+                            </div>
 
-                <div class="card topic-card border-0">
-                    <div class="card-img-wrapper">
-                        <img class="card-img-top" src="~/assets/card-second.png" alt="Card image cap">
-                        <div class="topic-card-svg-wrapper">
-                            <img src="~/assets/city-cultures.svg" alt="logo" />
+                            <div class="topic-relate-address-section d-flex">
+                                <img src="~/assets/position-logo.svg" alt="logo" style="@styleIcon" />
+                                <p class="topic-relate-address" style="@styleText">Quảng Nam, Việt Nam</p>
+                            </div>
+                            <div class="card-body">
+                                <p class="topic-relate-title">@item.Title</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="topic-relate-address-section d-flex">
-                        <img src="~/assets/position-logo.svg" alt="logo" />
-                        <p class="topic-relate-address">Phú Quốc, Việt Nam</p>
-                    </div>
-                    <div class="card-body">
-                        <p class="topic-relate-title">Topas Ecolodge - Service and comfort in the clouds</p>
-                    </div>
-                </div>
-
-                <div class="card topic-card border-0">
-                    <div class="card-img-wrapper">
-                        <img class="card-img-top" src="~/assets/card-third.png" alt="Card image cap">
-                        <div class="topic-card-svg-wrapper">
-                            <img src="~/assets/nature-adventure.svg" alt="logo" />
-                            <p>Nature Adventures</p>
-                        </div>
-                    </div>
-                    <div class="topic-relate-address-section d-flex">
-                        <img src="~/assets/position-logo.svg" alt="logo" style="filter:invert(56%) sepia(88%) saturate(353%) hue-rotate(3deg) brightness(91%) contrast(84%) opacity(96%);" />
-                        <p class="topic-relate-address" style="color:#C09436">Quảng Nam, Việt Nam</p>
-                    </div>
-                    <div class="card-body">
-                        <p class="topic-relate-title">Experience traveling 4 days 3 nights in Quang Ngai pearl island</p>
-                    </div>
-                </div>
+                    }
+                }
             </div>
         </div>
 

@@ -5,7 +5,11 @@ VisualStudioVersion = 17.1.32421.90
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MigoService", "MigoService\MigoService.csproj", "{EC03481A-F735-4EE0-86DD-E59493592796}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MigoClient", "MigoClient\MigoClient.csproj", "{E1725BB7-B167-400A-8C52-79CB7730EB55}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MigoClient", "MigoClient\MigoClient.csproj", "{E1725BB7-B167-400A-8C52-79CB7730EB55}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{EA667FB8-C8A3-4CF5-A943-84FE4BD821FD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core", "Core\Core.csproj", "{56B8448A-CBFA-42AD-A48B-5FD6A1079087}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{E1725BB7-B167-400A-8C52-79CB7730EB55}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E1725BB7-B167-400A-8C52-79CB7730EB55}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E1725BB7-B167-400A-8C52-79CB7730EB55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA667FB8-C8A3-4CF5-A943-84FE4BD821FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA667FB8-C8A3-4CF5-A943-84FE4BD821FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA667FB8-C8A3-4CF5-A943-84FE4BD821FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA667FB8-C8A3-4CF5-A943-84FE4BD821FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56B8448A-CBFA-42AD-A48B-5FD6A1079087}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56B8448A-CBFA-42AD-A48B-5FD6A1079087}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56B8448A-CBFA-42AD-A48B-5FD6A1079087}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56B8448A-CBFA-42AD-A48B-5FD6A1079087}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
