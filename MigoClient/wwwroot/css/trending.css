@@ -1,6 +1,6 @@
 ﻿.trending-screen {
-    background-color: brown;
     padding: 120px 160px;
+    background: #F9F8F2;
 }
 
 .trending-header {
@@ -8,7 +8,7 @@
     justify-content: space-between;
 }
 
-.trending-screen .card-img-wrapper img {
+.trending-screen .card-img-wrapper {
     height: 240px;
     width: 300px;
 }
@@ -40,17 +40,14 @@ p.trending-header-title {
         margin-top: 12px;
     }
 
-.trending-main {
-    overflow-x: auto;
-}
-
 .trending-category-title {
     padding: 0 3.75rem 0 3.75rem;
+    border-bottom: 1px solid #F2C94C;
+    padding-bottom: 15px;
 }
 
     .trending-category-title ul {
-/*        overflow-x: auto;
-*/        list-style-type: none;
+        list-style-type: none;
         display: flex;
         margin: unset;
         padding-inline-start: unset;
@@ -61,15 +58,15 @@ p.trending-header-title {
         padding: 0.5rem 1rem;
     }
 
-    .trending-category-title li:not(:last-child) {
-        margin-right: 11rem;
-    }
+        .trending-category-title li:not(:last-child) {
+            margin-right: 11rem;
+        }
 
-    .trending-category-title li.active {
-        background: #FAC850;
-        border-radius: 20px;
-        padding: 0.5rem 1rem;
-    }
+        .trending-category-title li.active {
+            background: #FAC850;
+            border-radius: 20px;
+            padding: 0.5rem 1rem;
+        }
 
     .trending-category-title p {
         font-style: normal;
@@ -80,3 +77,134 @@ p.trending-header-title {
         color: #323234;
         margin: unset;
     }
+
+.trending-category-card {
+    overflow-x: auto;
+    width: auto;
+    margin-top: 40px;
+    display: flex;
+    padding-bottom: 50px;
+}
+
+    .trending-category-card::-webkit-scrollbar-track {
+        margin: 0 25vh 0 25vh;
+        border: none;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    }
+
+    .trending-category-card::-webkit-scrollbar {
+        height: 3px;
+    }
+
+    .trending-category-card::-webkit-scrollbar-thumb {
+        background-color: #333333;
+        border-radius: 30px;
+    }
+
+.trending-card {
+    width: 300px;
+    min-width: unset !important;
+    background-color: unset;
+}
+
+    .trending-card:not(:last-child) {
+        margin-right: 30px;
+    }
+
+p.trending-title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 26px;
+    color: #020202;
+}
+
+.trending-card-footer {
+    margin-top: 12px;
+}
+
+    .trending-card-footer p {
+        padding-left: 25px;
+        margin-bottom: unset;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.04em;
+        color: #828282;
+        position: absolute;
+        bottom: 0;
+    }
+
+.trending-card-body {
+    width: 100%;
+    height: 52px;
+    margin-top: 24px;
+}
+
+p.trending-title {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/*responsive section*/
+@media screen and (max-width: 700px) {
+    .trending-screen {
+        padding: 80px 23px 52px 23px;
+    }
+
+    p.trending-header-title {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 44px;
+        color: rgba(0, 0, 0, 0.86);
+    }
+
+    .trending-header {
+        display: unset;
+    }
+
+    .trending-category-title {
+        padding: 0px;
+        padding-bottom: 0px;
+        border-bottom: none;
+    }
+
+        .trending-category-title li:not(:last-child) {
+            margin-right: 1rem;
+        }
+
+        .trending-category-title p {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 23px;
+            text-align: center;
+            color: #323234;
+        }
+
+    .trending-screen .card-img-wrapper {
+        width: 270px;
+        height: 216px;
+    }
+
+    .trending-card:not(:last-child) {
+        margin-right: 24px;
+    }
+
+    p.trending-title {
+        -webkit-line-clamp: 3;
+    }
+
+    .trending-card-footer {
+        margin-top: 30px;
+    }
+
+    .trending-category-card::-webkit-scrollbar-track {
+        margin: 0 10vh 0 10vh !important;
+    }
+}
