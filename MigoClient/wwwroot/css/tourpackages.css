@@ -1,0 +1,234 @@
+﻿.tour-package-header p {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    color: #080D34;
+    padding-left: 15px;
+}
+
+.tour-package-screen {
+    padding: 120px 160px;
+}
+
+.tour-packages-list {
+    overflow: hidden;
+    padding-bottom: 100px;
+}
+
+.swiper-container {
+    position: relative;
+}
+
+.package-address {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: right;
+    color: #000000;
+    margin: unset;
+    padding-left: 8px;
+}
+
+.tour-packages-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.tour-packages-each:not(:last-child) {
+    margin-right: 30px;
+}
+
+p.package-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 32px;
+    color: #191A2B;
+    margin-top: 12px;
+}
+
+p.package-description {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 28px;
+    color: #757575;
+}
+
+p.package-author-name {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #F2C94C;
+}
+
+p.footer-price-title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    color: #BDBDBD;
+    margin: unset;
+}
+
+p.footer-price {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: #333333;
+    padding-left: 10px;
+    margin: unset;
+}
+
+p.footer-date {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: right;
+    color: #333333;
+    margin: unset;
+}
+
+.package-card-footer {
+    /*height: 60px;*/
+    background-color: white !important;
+}
+
+.packages-card {
+    width: 300px;
+    height: 528px;
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+    border: none;
+}
+
+    .packages-card img.card-img-top {
+        height: 220px;
+        width: 300px;
+    }
+
+.package-card-body {
+    padding: 16px;
+    border: none;
+}
+
+.package-card-address-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.package-address-section {
+    display: flex;
+}
+
+.package-card-author-wrapper {
+    display: flex;
+}
+
+.author-img-wrapper {
+    height: 24px;
+    width: 24px;
+    border: 2px solid #F2C94C;
+    border-radius: 30px;
+    text-align: center;
+    background-size: cover;
+}
+
+.package-author-name {
+    padding-left: 10px;
+}
+
+.price-wrapper {
+    display: flex;
+}
+
+.package-footer-wrapper, .package-img-info-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.package-img-info-wrapper {
+    padding: 0.5rem 1rem;
+    color: white !important;
+}
+
+    .package-img-info-wrapper p {
+        margin: unset;
+    }
+
+.swiper-pagination {
+    bottom: unset !important;
+    position: absolute;
+    margin-top: 56px;
+}
+
+.package-swiper-custom span.swiper-pagination-bullet {
+    width: 109px;
+    border-radius: unset;
+    height: 1px;
+    color: rgba(0, 0, 0, 0.12);
+    margin: 1px !important;
+}
+
+.package-swiper-custom span.swiper-pagination-bullet-active {
+    height: 3px;
+    background: #828282;
+    border-radius: 10px;
+}
+
+.package-footer-custom {
+    background-color: unset;
+}
+
+.package-arrow-container {
+    top: 0;
+    left: 0;
+    height: 50px;
+}
+
+    .package-arrow-container img {
+        height: 8px;
+        width: 12px;
+        margin-right: 15px;
+    }
+
+@media screen and (max-width: 700px) {
+    .tour-packages-wrapper {
+        flex-wrap: wrap;
+    }
+
+    .tour-packages-each:not(:last-child) {
+        margin-right: unset;
+        margin-bottom: 24px;
+    }
+
+    .tour-package-screen {
+        padding: 80px 9px;
+    }
+
+    .tour-package-header p {
+        font-size: 28px;
+        line-height: 44px;
+    }
+
+    .packages-card {
+        width: 327px;
+        height: auto;
+    }
+
+        .packages-card img.card-img-top {
+            width: 327px;
+            height: 160px;
+        }
+
+    .package-img-info-wrapper {
+        position: absolute;
+        bottom: 0;
+    }
+}
