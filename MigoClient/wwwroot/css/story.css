@@ -3,54 +3,54 @@
     background-color: #F9F8F2;
 }
 
-.story-container {
-    padding: 120px 160px 120px 160px;
-}
+    .story-screen .story-container {
+        padding: 120px 160px 120px 160px;
+    }
 
-p.title {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 56px;
-    color: #080D34;
-    margin: auto;
-}
+    .story-screen p.title {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 56px;
+        color: #080D34;
+        margin: auto;
+    }
 
-.story-calendar-group {
-    position: relative;
-}
+    .story-screen .story-calendar-group {
+        position: relative;
+    }
 
-p.calendar-month-logo {
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 14px !important;
-    line-height: 18px;
-    text-transform: uppercase;
-    color: #000000;
-    padding: 7px 7px 4px 8px !important;
-}
+    .story-screen p.calendar-month-logo {
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 14px !important;
+        line-height: 18px;
+        text-transform: uppercase;
+        color: #000000;
+        padding: 7px 7px 4px 8px !important;
+    }
 
-p.calendar-month {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 28px;
-    color: #191A2B;
-    margin-bottom: unset;
-    margin-left: 12px;
-    padding-top: 8px;
-}
+    .story-screen p.calendar-month {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 28px;
+        color: #191A2B;
+        margin-bottom: unset;
+        margin-left: 12px;
+        padding-top: 8px;
+    }
 
 /*responsive section*/
 @media screen and (max-width: 700px) {
-    .story-container {
+    .story-screen .story-container {
         padding: 80px 24px 88px 24px;
     }
 
-    p.title {
+    .story-screen p.title {
         font-size: 28px !important;
         line-height: 44px !important;
         color: #323234 !important;
@@ -59,33 +59,33 @@ p.calendar-month {
 /*header section end*/
 
 /*main section start*/
-.story-main {
+.story-screen .story-main {
     /*background-color: chocolate;*/
 }
 
-.story-photo-group {
+.story-screen .story-photo-group {
     width: auto;
     overflow-x: auto;
     display: flex;
     margin-top: 40px;
 }
 
-    .story-photo-group::-webkit-scrollbar-track {
+    .story-screen .story-photo-group::-webkit-scrollbar-track {
         margin: 0 25vh 0 25vh;
         border: none;
         border-bottom: 1px solid rgba(0, 0, 0, 0.12);
     }
 
-    .story-photo-group::-webkit-scrollbar {
+    .story-screen .story-photo-group::-webkit-scrollbar {
         height: 3px;
     }
 
-    .story-photo-group::-webkit-scrollbar-thumb {
+    .story-screen .story-photo-group::-webkit-scrollbar-thumb {
         background-color: #333333;
         border-radius: 30px;
     }
 
-.story-photo {
+.story-screen .story-photo {
     border-radius: 12px;
     width: 300px;
     height: 435px;
@@ -93,7 +93,7 @@ p.calendar-month {
     margin-bottom: 40px;
 }
 
-.story-photo-weather {
+.story-screen .story-photo-weather {
     margin: 7px 9px;
     width: 99px;
     height: 40px;
@@ -106,19 +106,19 @@ p.calendar-month {
     justify-content: center;
 }
 
-    .story-photo-weather svg {
+    .story-screen .story-photo-weather svg {
         height: 28px;
         width: 28px;
     }
 
 
-.story-content {
+.story-screen .story-content {
     width: 300px;
     height: 100%;
     position: relative;
 }
 
-p.story-content-celcius {
+.story-screen p.story-content-celcius {
     margin: unset;
     margin-left: 8px;
     font-style: normal;
@@ -128,7 +128,7 @@ p.story-content-celcius {
     color: #FFFFFF;
 }
 
-p.story-content-address {
+.story-screen p.story-content-address {
     width: 100%;
     bottom: 0%;
     position: absolute;
@@ -143,42 +143,42 @@ p.story-content-address {
 
 /*responsive section*/
 @media screen and (max-width: 700px) {
-    .story-photo {
+    .story-screen .story-photo {
         border-radius: 8px !important;
         width: 248.73px !important;
         height: 360px !important;
         margin-right: 24px !important;
     }
 
-    .story-content {
+    .story-screen .story-content {
         width: 248.73px !important;
         height: 100%;
     }
 
-    .story-photo-weather svg {
+    .story-screen .story-photo-weather svg {
         height: 21px;
         width: 21px;
     }
 
-    p.story-content-celcius {
+    .story-screen p.story-content-celcius {
         font-style: normal !important;
         font-weight: 600 !important;
         font-size: 16px !important;
         line-height: 24px !important;
     }
 
-    p.story-content-address {
+    .story-screen p.story-content-address {
         font-weight: 700 !important;
         font-size: 18px !important;
         line-height: 26px !important;
     }
 
-    .story-photo-group{
+    .story-screen .story-photo-group {
         margin-top: 24px !important;
     }
 
-    .story-photo-group::-webkit-scrollbar-track {
-        margin: 0 10vh 0 10vh !important;
-    }
+        .story-screen .story-photo-group::-webkit-scrollbar-track {
+            margin: 0 10vh 0 10vh !important;
+        }
 }
 /*main section end*/
