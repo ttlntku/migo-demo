@@ -15,5 +15,6 @@ namespace Core.Entities
 
         [Column(TypeName = "varchar(100)")]
         public string TopicIcon { get; set; }
+        public virtual StoryEntity StoryEntity { get; set; }
     }
 }

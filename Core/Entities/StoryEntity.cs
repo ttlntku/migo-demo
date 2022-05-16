@@ -12,7 +12,7 @@ namespace Core.Entities
     public class StoryEntity : BaseEntitiy
     {
         [Column(TypeName = "int")]
-        [ForeignKey("TopicEntity"), DatabaseGenerated(DatabaseGeneratedOption.None)]
+        [ForeignKey("TopicEntity")]
         public int TopicId { get; set; }
 
         [Column(TypeName = "nvarchar(100)")]
