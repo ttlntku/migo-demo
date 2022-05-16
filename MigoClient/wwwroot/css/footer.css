@@ -1,0 +1,129 @@
+﻿.footer-screen {
+    background: #F9F8F2;
+    padding: 70px 160px;
+}
+
+.footer-content-header {
+    height: 60px;
+}
+
+.title-text {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+    white-space: nowrap;
+    margin: unset;
+}
+
+.normal-text {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: #4F4F4F;
+    margin: unset;
+}
+
+.footer-screen p.description {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+    margin: unset;
+}
+
+.footer-screen div.email-section {
+    display: flex;
+}
+
+.footer-screen p.email-address {
+    margin: unset;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #CAA123;
+    padding-left: 10px;
+}
+
+.footer-screen .block-content {
+    margin-right: 30px;
+}
+
+.footer-screen button.follow-page {
+    padding: 0.625rem 1.5rem;
+    background: unset;
+    border: 1px solid #F2C94C;
+    border-radius: 100px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #000000;
+    margin-top: 32px;
+}
+
+.footer-screen .app-store, .google-play {
+    height: 35px;
+    width: 120px;
+    object-fit: cover;
+    background-size: 100% 100%;
+}
+
+.footer-screen .logo-button-group {
+    margin-top: 32px;
+    width: fit-content;
+}
+
+.footer-screen .logo-button {
+    height: 40px;
+    width: 40px;
+    padding-bottom: 5px;
+    border-radius: 100px;
+    border: 1px solid #F2C94C;
+}
+
+    .footer-screen .logo-button:not(:last-child) {
+        margin-right: 1rem;
+    }
+
+/*responsive section*/
+@media screen and (max-width: 700px) {
+    .footer-content-header {
+        height: 30px;
+    }
+
+    .footer-container {
+        flex-wrap: wrap;
+    }
+
+    .footer-screen {
+        padding: 50px 24px;
+    }
+
+    .normal-text {
+        font-size: 15px;
+        line-height: 23px;
+    }
+
+    .footer-screen p.description {
+        color: #323234;
+    }
+
+    .title-text {
+        color: #000000;
+        font-size: 16px;
+    }
+
+    .footer-screen .block-content {
+        padding-top: 10px;
+    }
+
+    .footer-about, .footer-policy, .migo-apps {
+        margin-top: 24px;
+    }
+}
