@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
@@ -15,6 +16,6 @@ namespace Core.Entities
 
         [Column(TypeName = "varchar(100)")]
         public string TopicIcon { get; set; }
-        public virtual StoryEntity StoryEntity { get; set; }
+        public virtual Collection<StoryEntity> StoryEntity { get; set; }
     }
 }
